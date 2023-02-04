@@ -1,0 +1,21 @@
+$striped-table-background-color: rgba(245, 246, 250, 0.4);
+/* table */
+.el-table:not(.el-table--border) .el-table__cell:hover {
+  background-color: $theme-two-color!important;
+}
+
+.el-table td.el-table__cell div:hover {
+  //color: $success-color!important;
+}
+
+.el-table tr:hover {
+  color: $chart-one-color!important;
+}
+
+.el-table th.el-table__cell {
+  background-color: $icon-seven-color!important;
+}
+
+.el-table--striped .el-table__body tr.el-table__row--striped td.el-table__cell {
+  background-color: $striped-table-background-color!important;
+}

@@ -1,0 +1,116 @@
+.el-button {
+    width: 134px;
+    height: 40px;
+    border-radius: 4px;
+}
+
+//次要按钮
+.secondary-button {
+    color: $font-two-color;
+}
+
+.secondary-button:hover,
+.secondary-button:active,
+.secondary-button:focus {
+    background: $background-color;
+}
+
+//其他按钮
+.other-button {
+    width: 79px;
+    height: 31px;
+    color: $font-two-color;
+}
+
+//下拉按钮
+.select-button {
+    width: 99px;
+    height: 27px;
+    color: $font-two-color;
+    border-color: #d8d8d8;
+}
+
+//带图标
+.icon-button {
+    width: 134px;
+    height: 30px;
+    border: none;
+    color: $font-main-color;
+    .el-icon {
+        color: $theme-main-color;
+    }
+    opacity: 0.5;
+}
+
+.icon-button:hover {
+    background-color: $font-four-color;
+    opacity: 1;
+    color: $font-main-color;
+}
+
+.icon-button:focus,
+.icon-button:active {
+    opacity: 1;
+    color: $font-main-color;
+}
+
+//表格操作按钮
+.handle-button {
+    width: 84px;
+    height: 24px;
+    line-height: 0.5;
+}
+
+//禁用按钮
+.el-button.is-disabled,
+.el-button.is-disabled:hover {
+    background-color: $neutral-one-color;
+    color: $font-four-color;
+}
+
+//气泡确认框
+.el-overlay-dialog,
+.el-message-box__message {
+    text-align: center;
+    justify-content: center;
+    .el-button {
+        width: 104px;
+        height: 40px;
+    }
+    .el-dialog__footer {
+        text-align: center;
+    }
+}
+
+//时间线
+// .el-timeline-item__content {
+//   width: 476px;
+//   height: 60px;
+//   text-align: center;
+//   line-height: 60px;
+//   background-color: #f1f3f4;
+//   border-radius: 10px;
+// }
+.el-pagination {
+    justify-content: end;
+    margin: 5px 5px 0 0;
+}
+
+.el-pagination span:not([class*=suffix]),
+.el-pagination button {
+    width: 88px !important;
+    height: 27px;
+}
+
+.el-pagination--small span:not([class*=suffix]),
+.el-pagination--small button {
+    .el-select--small {
+        display: flex;
+        align-items: center;
+    }
+}
+
+.el-pagination .el-select .el-input {
+    width: 99px !important;
+    height: 27px;
+}

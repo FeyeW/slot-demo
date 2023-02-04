@@ -1,0 +1,26 @@
+// 四面阴影
+.shadow {
+    background-color: $font-four-color;
+    border-radius: 8px;
+    -moz-box-shadow: 5px 5px 10px $background-color1, 5px -5px 10px $background-color1, -5px 5px 10px $background-color1, -5px -5px 10px $background-color1;
+    -webkit-box-shadow: 5px 5px 10px $background-color1, 5px -5px 10px $background-color1, -5px 5px 10px $background-color1, -5px -5px 10px $background-color1;
+    box-shadow: 5px 5px 10px $background-color1, 5px -5px 10px $background-color1, -5px 5px 10px $background-color1, -5px -5px 10px $background-color1;
+}
+
+// 上右下 三面阴影
+.shadow_top-right-bottom {
+    -moz-box-shadow: 5px 5px 10px $background-color1, 5px -5px 10px $background-color1, -5px 5px 10px $background-color1;
+    -webkit-box-shadow: 5px 5px 10px $background-color1, 5px -5px 10px $background-color1, -5px 5px 10px $background-color1;
+    box-shadow: 5px 5px 10px $background-color1, 5px -5px 10px $background-color1, -5px 5px 10px $background-color1;
+}
+
+// 只有 下 一面阴影
+.shadow-bottom {
+    -moz-box-shadow: -5px 5px 5px $background-color1;
+    -webkit-box-shadow: -5px 5px 5px $background-color1;
+    box-shadow: -5px 5px 5px $background-color1;
+}
+
+.table-button {
+    width: 50px;
+}

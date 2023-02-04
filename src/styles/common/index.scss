@@ -1,0 +1,8 @@
+@import './common.module.scss';
+@import '../elementPlus/element-part.scss';
+@import '../elementPlus/form.scss';
+@import '../elementPlus/table.scss';
+@import './public.scss';
+:root {
+    --el-color-primary: $theme-main-color;
+}

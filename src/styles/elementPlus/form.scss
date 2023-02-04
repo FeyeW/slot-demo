@@ -1,0 +1,229 @@
+$input-required-info-color: #F0555A;
+$input-success-info-color: #57BC6E;
+$tooltip-popper-background-color: rgba(0, 0, 0, 0.75);
+$date-picker-background-color: rgba(244, 244, 244, 0.4);
+// 状态
+.el-input {
+    width: 260px;
+    height: 32px;
+}
+
+.el-input:focus {
+    border-color: $theme-main-color!important;
+    ;
+}
+
+.el-form-item__error {
+    color: $input-required-info-color!important;
+}
+
+
+/* 自定义内容的区域的颜色 */
+
+//.el-popper {
+//  width: 319px;
+//  min-height: 180px;
+//  background: $tooltip-popper-background-color !important;
+//  box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+//  border-radius: 0!important;
+//  border: none;
+//}
+//.el-popper__arrow::before {
+//visibility: hidden;
+//background: $tooltip-popper-background-color !important;
+//box-shadow: 0px 2px 20px 0px rgba(0, 0, 0, 0.1);
+//border-radius: 0!important;
+//border: none;
+//  border-style: none !important;
+//}
+
+/* 选择器 */
+
+.el-select {
+    width: 260px;
+    height: 32px;
+    .el-select__popper {
+        background: $font-four-color;
+    }
+}
+
+
+/* 日期选择器 */
+
+.el-date-editor.el-input,
+.el-date-editor.el-input__wrapper {
+    width: 260px!important;
+    height: 32px;
+    position: relative;
+    .el-input__prefix {
+        position: absolute;
+        right: 3px; // left根据实际情况定值
+        top: 0;
+    }
+}
+
+.el-date-table th {
+    background: $theme-main-color;
+    color: $font-four-color!important;
+}
+
+.el-date-table tbody {
+    background: $date-picker-background-color!important;
+}
+
+.el-date-table td.current:not(.disabled) .el-date-table-cell__text {
+    background: $theme-main-color!important;
+}
+
+.el-date-table .el-popper.is-light .el-popper__arrow::before {
+    visibility: hidden;
+}
+
+.el-date-picker__header-label {
+    color: $font-main-color!important;
+    font-size: 14px!important;
+    font-family: Source Han Sans CN;
+    font-weight: 700!important;
+    line-height: 42px!important;
+}
+
+.el-picker-panel__body {
+    position: relative;
+    .el-date-picker__editor-wrap {
+        //display: none;
+    }
+    .el-picker-panel__content {
+        margin-bottom: 15%!important;
+    }
+    .el-date-picker__time-header {
+        position: absolute;
+        bottom: 0!important;
+        .el-date-picker__editor-wrap:nth-child(1) {
+            display: none;
+        }
+        .el-date-picker__editor-wrap:nth-child(2) {
+            position: relative;
+            .el-input--small {
+                position: absolute;
+                right: 10px;
+                bottom: 0;
+                //width: 181px;
+                width: 75%;
+                height: 31px;
+            }
+            .el-input--small::after {
+                content: "钟";
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                background-image: url('@/styles/images/clock.png');
+                position: absolute;
+                right: 10px;
+                top: 5px;
+                //background-color: #0D867F;
+            }
+        }
+        .el-date-picker__editor-wrap:nth-child(2)::before {
+            content: '时间';
+            color: $font-two-color;
+            margin-left: 20px;
+            font-size: 14px;
+            font-family: Microsoft JhengHei UI;
+            font-weight: 400;
+        }
+    }
+}
+
+.el-picker-panel .el-time-panel {
+    left: 69px;
+    width: 234px!important;
+}
+
+
+/*数字输入框*/
+
+.el-input-number--small {
+    width: 260px!important;
+    height: 32px!important;
+    .el-input__inner {
+        text-align: left!important;
+    }
+}
+
+// 加号
+.el-input-number.is-controls-right .el-input-number__decrease {
+    --el-input-number-controls-height: 15px!important;
+}
+
+// 减号
+.el-input-number.is-controls-right .el-input-number__increase {
+    --el-input-number-controls-height: 15px!important;
+}
+
+
+/*选择框*/
+
+.el-radio__input.is-checked+.el-radio__label {
+    color: $font-two-color!important;
+}
+
+.el-radio.el-radio--large .el-radio__inner:hover {
+    border-color: $theme-main-color!important;
+}
+
+.el-radio__input.is-checked .el-radio__inner {
+    background: $theme-main-color!important;
+    border-color: $theme-main-color!important;
+}
+
+.el-checkbox__input.is-checked+.el-checkbox__label {
+    color: $font-two-color!important;
+}
+
+.el-checkbox.el-checkbox--large .el-checkbox__inner:hover {
+    border-color: $theme-main-color!important;
+}
+
+.el-checkbox__input.is-checked .el-checkbox__inner {
+    background: $theme-main-color!important;
+    border-color: $theme-main-color!important;
+}
+
+
+/*8.开关*/
+
+.el-switch.is-checked .el-switch__core {
+    background-color: $theme-main-color!important;
+    border-color: $theme-main-color!important;
+}
+
+.el-switch__label.is-active {
+    color: $theme-main-color!important;
+}
+
+.el-switch {
+    --el-switch-on-color: $font-main-color!important;
+}
+
+
+/*10.上传文件*/
+
+// 手动上传
+// .el-button {
+//   border-radius: 2px!important;
+//   width: 101px!important;
+//   height: 31px!important;
+// }
+// .el-button:hover, .el-button:focus {
+//   color: $theme-main-color!important;
+//   border-color: $theme-main-color!important;
+// }
+// 拖拽上传
+.el-upload-dragger {
+    width: 270px!important;
+    height: 144px!important;
+}
+
+.el-upload-dragger:hover {
+    border-color: $theme-main-color!important;
+}
