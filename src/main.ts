@@ -41,4 +41,4 @@ app.mount('#app')
 
 // 启动 qiankun
 // eslint-disable-next-line prettier/prettier
-// start({ prefetch: 'all' })// 预加载
+start({ prefetch: 'all' })// 预加载

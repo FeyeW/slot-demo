@@ -1,8 +1,6 @@
 <template>
   <div class="layout">
-    <Header />
     <div class="layout_middle">
-      <Menu></Menu>
       <div class="layout_middle_content">
         <router-view></router-view>
       </div>
@@ -13,8 +11,6 @@
   </div>
 </template>
 <script lang="ts" setup>
-import Header from '@/layout/components/Header.vue'
-import Menu from './components/Menu.vue'
 import Footer from './components/Footer.vue'
 </script>
 <style lang="scss" scoped>
@@ -25,6 +21,7 @@ import Footer from './components/Footer.vue'
   &_middle {
     display: flex;
     &_content {
+      min-width: calc(100% - 240px);
       width: 100%;
       margin-left: 20px;
     }

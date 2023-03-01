@@ -1,91 +1,91 @@
 // base color
-$background-color:#f5f5f5;
-$background-color1:rgba(230, 228, 228, 0.3);
+$background-color: #f5f5f5;
+$background-color1: rgba(230, 228, 228, 0.3);
 // $background-color1:rgba(230, 228, 228, 0.8);
 // 1、Theme Color
-$theme-main-color:#0D867F; //主题色-主色 rgba(13, 134, 127, 1);
-$theme-one-color: rgba(13, 134, 127, 0.6); //主题色-辅色1 #0D867F99
-$theme-two-color:rgba(13, 134, 127, 0.05); //主题色-辅色2
-$theme-three-color:#F0F0F0; //主题色-辅色3
+$theme-main-color: #409eff; //主题色-主色 rgba(13, 134, 127, 1);
+$theme-one-color: rgba(93, 209, 255, 0.6); //主题色-辅色1 #0D867F99
+$theme-two-color: rgba(13, 134, 127, 0.05); //主题色-辅色2
+$theme-three-color: #f0f0f0; //主题色-辅色3
 // 2、Icon Color
-$icon-one-color:#FF9F41;
-$icon-two-color:#95B5FC;
-$icon-three-color:#57BC6E;
-$icon-four-color:#F69998;
-$icon-five-color:#4FA8A4;
-$icon-six-color:#F5F8F8;
-$icon-seven-color:#F5F6FA;
-$icon-eight-color:#F4F7FB66;
-$icon-nine-color:#EDEDED;
+$icon-one-color: #ff9f41;
+$icon-two-color: #95b5fc;
+$icon-three-color: #57bc6e;
+$icon-four-color: #f69998;
+$icon-five-color: #4fa8a4;
+$icon-six-color: #f5f8f8;
+$icon-seven-color: #f5f6fa;
+$icon-eight-color: #f4f7fb66;
+$icon-nine-color: #ededed;
 // 3、Status Color
-$success-color:#57BC6E;
-$success-one-color:#57BC6E4D; //透明度 30%
-$success-two-color:#57BC6E1A; //透明度 10%
-$error-color:#F0555A;
-$error-one-color:#F0555A4D;
-$error-two-color:#F0555A1A;
-$warning-color:#FF9F41;
-$warning-one-color:#FF9F414D;
-$warning-two-color:#FF9F411A;
+$success-color: #57bc6e;
+$success-one-color: #57bc6e4d; //透明度 30%
+$success-two-color: #57bc6e1a; //透明度 10%
+$error-color: #f0555a;
+$error-one-color: #f0555a4d;
+$error-two-color: #f0555a1a;
+$warning-color: #ff9f41;
+$warning-one-color: #ff9f414d;
+$warning-two-color: #ff9f411a;
 // 4、文字颜色
-$font-main-color:#333333;
-$font-one-color:#33333399;
-$font-two-color:#666666;
-$font-three-color:#999999;
-$font-four-color:#FFFFFF;
+$font-main-color: #333333;
+$font-one-color: #33333399;
+$font-two-color: #666666;
+$font-three-color: #999999;
+$font-four-color: #ffffff;
 // 5、中性色
-$neutral-color:#E5E5E5;
-$neutral-one-color:#CCCCCC;
-$neutral-two-color:#F7F7F7;
+$neutral-color: #e5e5e5;
+$neutral-one-color: #cccccc;
+$neutral-two-color: #f7f7f7;
 // 6、统计图颜色
-$chart-one-color:#4FA8A4;
-$chart-two-color:#9285EB;
-$chart-three-color:#34C1F0;
-$chart-four-color:#3D92D5;
-$chart-five-color:#57BC6E;
-$chart-six-color:#FCCF54;
-$chart-seven-color:#FDAA56;
-$chart-eight-color:#DB6262;
-$chart-nine-color:#FB8577;
+$chart-one-color: #4fa8a4;
+$chart-two-color: #9285eb;
+$chart-three-color: #34c1f0;
+$chart-four-color: #3d92d5;
+$chart-five-color: #57bc6e;
+$chart-six-color: #fccf54;
+$chart-seven-color: #fdaa56;
+$chart-eight-color: #db6262;
+$chart-nine-color: #fb8577;
 :export {
-    themeMainColor: $theme-main-color;
-    themeOneColor: $theme-one-color;
-    themeTwoColor: $theme-two-color;
-    themeThreeColor: $theme-three-color;
-    iconOneColor: $icon-one-color;
-    iconTwoColor: $icon-two-color;
-    iconThreeColor: $icon-three-color;
-    iconFourColor: $icon-four-color;
-    iconFiveColor: $icon-five-color;
-    iconSixColor: $icon-six-color;
-    iconSevenColor: $icon-seven-color;
-    iconEightColor: $icon-eight-color;
-    iconNineColor: $icon-nine-color;
-    successColor: $success-color;
-    successOneColor: $success-one-color;
-    successTwoColor: $success-two-color;
-    errorColor: $error-color;
-    errorOneColor: $error-one-color;
-    errorTwoColor: $error-two-color;
-    warningColor: $warning-color;
-    warningOneColor: $warning-one-color;
-    warningTwoColor: $warning-two-color;
-    fontMainColor: $font-main-color;
-    fontOneColor: $font-one-color;
-    fontTwoColor: $font-two-color;
-    fontThreeColor: $font-three-color;
-    fontFourColor: $font-four-color;
-    neutralColor: $neutral-color;
-    neutralOneColor: $neutral-one-color;
-    neutralTwoColor: $neutral-two-color;
-    chartOneColor: $chart-one-color;
-    chartTwoColor: $chart-two-color;
-    chartThreeColor: $chart-three-color;
-    chartFourColor: $chart-four-color;
-    chartFiveColor: $chart-five-color;
-    chartSixColor: $chart-six-color;
-    chartSevenColor: $chart-seven-color;
-    chartEightColor: $chart-eight-color;
-    chartNineColor: $chart-nine-color;
-    backgroundColor: $background-color;
+  themeMainColor: $theme-main-color;
+  themeOneColor: $theme-one-color;
+  themeTwoColor: $theme-two-color;
+  themeThreeColor: $theme-three-color;
+  iconOneColor: $icon-one-color;
+  iconTwoColor: $icon-two-color;
+  iconThreeColor: $icon-three-color;
+  iconFourColor: $icon-four-color;
+  iconFiveColor: $icon-five-color;
+  iconSixColor: $icon-six-color;
+  iconSevenColor: $icon-seven-color;
+  iconEightColor: $icon-eight-color;
+  iconNineColor: $icon-nine-color;
+  successColor: $success-color;
+  successOneColor: $success-one-color;
+  successTwoColor: $success-two-color;
+  errorColor: $error-color;
+  errorOneColor: $error-one-color;
+  errorTwoColor: $error-two-color;
+  warningColor: $warning-color;
+  warningOneColor: $warning-one-color;
+  warningTwoColor: $warning-two-color;
+  fontMainColor: $font-main-color;
+  fontOneColor: $font-one-color;
+  fontTwoColor: $font-two-color;
+  fontThreeColor: $font-three-color;
+  fontFourColor: $font-four-color;
+  neutralColor: $neutral-color;
+  neutralOneColor: $neutral-one-color;
+  neutralTwoColor: $neutral-two-color;
+  chartOneColor: $chart-one-color;
+  chartTwoColor: $chart-two-color;
+  chartThreeColor: $chart-three-color;
+  chartFourColor: $chart-four-color;
+  chartFiveColor: $chart-five-color;
+  chartSixColor: $chart-six-color;
+  chartSevenColor: $chart-seven-color;
+  chartEightColor: $chart-eight-color;
+  chartNineColor: $chart-nine-color;
+  backgroundColor: $background-color;
 }

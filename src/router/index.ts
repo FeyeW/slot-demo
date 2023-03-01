@@ -1,10 +1,10 @@
 import { createRouter, createWebHistory, RouteRecordRaw } from 'vue-router'
-import Layout from '@/layout/index.vue'
 import Home from '@/views/home/index.vue'
+import Appendix from '@/views/compreSearch/fileSearch/Appendix.vue'
 const routes: Array<RouteRecordRaw> = [
   {
     path: '/',
-    component: Layout,
+    component: Appendix,
     redirect: '/home',
     children: [
       {
